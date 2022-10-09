@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!-- <link rel="stylesheet" href="style.css">  -->
+
+    <title>Document</title>
+</head>
+<body class = 'container p-3 mb-2 bg-dark text-white'>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active border-right" href="index.html">Learning Quantum Tunneling <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link border-right" href="questions.html">Questions</a>
+                <a class="nav-item nav-link border-right" href="about.html">About Us</a>
+              </div>
+            </div>
+          </nav>
+        <hr>
+        <h1>Quantum tunneling</h1>
+    </header>
+    <section>
+        <h2>Contents</h2>
+        <ul>
+            <li>Nuclear fusion</li>
+            <li>Energy barriers</li>
+            <li>On the Earth</li>
+            <li>In the Sun</li>
+            <li>Proton Proton chain</li>
+            <li>Electron Tunneling</li>
+        </ul>
+    </section>
+    <section>
+        <h3>Nuclear fusion</h3>
+        <p>Nuclear Fusion is the reaction in which 2 or more atomic nuclei are combined to form another different atomic nuclei and sub atomic particles (neutrons or protons).</p>
+        <div class = 'row'>
+            <img class="img-fluid col-sm-6" src="../images/bindingEnergyPerNucleon.gif" alt="You didn't load the assets, sad" srcset="">
+            <div class = col-sm-6>
+                <p>
+                Nuclear fusion can occur in elements below Fe-56. From the graph below on can notice that the average binding energy per nucleon is increasing until Fe-56, this means that any reaction that causes molecules lighter molecules to fuse towards Fe-56 would be more stable. The energy released in these converted from the mass defect (\(\delta m\)).</p>
+                <p>
+                    Where: 
+                    \[\delta m = \frac{E}{mc^2}.\]
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h3>Energy Barriers</h3>
+        <p>
+            An energy barrier is the minimum amount of energy required to cause the reaction. Every reaction like physical or chemical, has an energy barrier. An example of a chemical energy barrier would be the combustion reaction of propane. An example of a physical energy barrier would be hitting a egg hard enough to break it.
+        </p>
+        <img src="../images/reactionEnergyGraph.jpg" alt="" class="img-fluid p-b">
+        <p>The above graph is a energy digram of a reaction and it is commonly used to represent chemical reactions. a) represents a exothermic reaction while b) represents an endothermic reaction. \(E_a\) represents the activation energy which is analogous to the energy barrier. Nuclear Fusion reactions are considered exothermic reactions as they release energy.</p>
+        
+        <h4>Coloumb Forces</h4>
+           <div class="row">    
+            <img src="../images/electric-charges.png" alt="" class="img-fluid col-sm-6">
+            <p class ='img-fluid col-sm-6'>
+                In Nuclear Fusion, the energy barrier is represented by Coloumb Forces. They are the electrostatic forces of repulsion found between the 2 positively charged nuclei. Naturally 2 negatively charged nuclei would repel and as such be as far apart from each other as possible. Energy must be input into the system to bring the like charges together.
+            </p>
+            <p>
+                The Coloumb forces and the potential energy can be modelled by the following equations: 
+                \[F = \frac{k q_1 q_2}{r^2}\]
+                \[U = \int\limits_{r}^{\infty}\frac{k q_1 q_2}{r^2} dr = -\frac{k q_1 q_2}{r}\]
+            </p>
+        </div>
+        
+        <h4>Strong Forces</h4>
+        <div class = 'row mb-3'>
+            <p class = 'col-sm-5'>
+                It is impossible for larger nuclei to form if there is only a repulsive Coloumbs Force. Seeing that protons can be packed close together in a nuclei, there must be an additional attractive force that holds them in a stable position. There is another force at play in Nuclear Fusion. It is the Strong Nuclear Force. As the name implies the strong nuclear force is a strong (literally) force that occurs in the nucleus of atoms. This force only works for short ranges, meaning it has a large magnitude at close distances but its magnitude falls of extremely quickly, much faster than the Coloumbs Force.
+                The overall force equation would be as follows:
+                \[F_{net} = -F_{coloumbs} + F_{strong}\]
+            </p>
+            <img src="../images/Internuclear distance graph.jpg" alt="" class="img-fluid col-sm-7">
+            
+        </div>
+            
+            <p>
+                Where there would be an attractive force when \(F_{net}\) is positive, and a repulsive force when \(F_{net}\) is negative.
+
+                Notice that after overcoming the repulsive Coloumb Forces at a long range (Energy Barrier), at a sufficiently close range between the nuclei, the magnitude Strong Force would be larger than that of the Coloumbs Force. This results in a attractive force between nuclei, resulting in fusion.
+            </p>
+        
+
+    </section>
+    <section>
+        <h3>On the Earth</h3>
+
+        <h4>Temperature to Kinetic Energy</h4>
+        <div class = 'row my-3'>
+
+            <img src="../images/velocityDistricutionOfGas.jpg " alt="" class="img-fluid col-sm-6">
+            <div class = 'col-sm-6'>
+                <p>As you have probably learnt before, average kinetic energy is proportional to temperature by \(KE_{avg}=\frac{3}{2}k_B T\) where \(k_B\) is the Boltzmann constant. The faster the particles in a material vibrate (ergo. more KE), the higher its temperature. It is important to note that there is a distinction between the two. Kinetic energy is a properity of every single atom while Temperature is a collective property. (There can be no temperature to a single atom)</p>
+                <p> A temperature is indicative of the average vibrational speed. Every paricle in an object does not vibrate at that same speed due to random nudges and bumps causing some of the particles to be faster while others would be slower.</p>
+            </div>
+        </div>
+        <p>
+        Above is a graph showing the Maxwell-Boltzmann distrubtion of the particle velocities at different temperatures. Notice that as the temperature increases, the curve flattens and shifts to the left. This means that at high temperatures, a higher proportion of the particles are moving at higher speeds. The proportion of particles that have Kinetic Energy larger than \( E_a \) would be able to undergo the fusion reaction. </p>
+        
+        <h4>Reactors on the Earth</h4>
+        <div class ='row'>
+
+            <img src="../images/Nuclear Power plant image.jpg" alt="" class="img-fluid col-sm-6">
+            <div class = 'col-sm-6'>
+            <p>
+                In our world, Nuclear Fission is much more popular than Nuclear Fusion. There are so many instances of operational Nuclear Fission Plants that React Uranium-238 or Plutonium, but there has never been a single Nuclear Fusion Plant. Why is that so?
+            </p>
+            <!-- need to add in the calcuations -->
+            <p> To answer the questions we need to run some calculations...Redementary calculations show that approximately {} energy is required to Fuse 2 Hydrogen nuclei. This may not seem like a lot of energy but becomes notiable of converting into particle collision speeds </p>
+            </div>
+        </div>
+    </section>
+
+    <section class = 'py-2'>
+        <h3>In the Sun</h3>
+        
+
+        <div class = 'row'>
+
+            <div class = col-sm-6>
+                <p>Stars are formed by large clouds of interstellar gas coalescing into a giant ball of plasma. This ball of gas must be massive enough for it to pull itself into a sphere shape and compress the gases until Nuclear fusion can occur</p>
+                <p>Did you know, The sun is a star. Yes it is a star that has a shocking mass of 1 solar mass (I wonder why). It is a yellow star in the main sequence. The Sun's radius is about 695,000 kilometers, or 109 times that of Earth. Its mass is about 330,000 times that of Earth, comprising about 99.86% of the total mass of the Solar System.Roughly three-quarters of the Sun's mass consists of hydrogen (~73%); the rest is mostly helium (~25%), with much smaller quantities of heavier elements, including oxygen, carbon, neon, and iron.</p>
+            </div>
+            <img class="img-fluid col-sm-6" src="../images/Sun imAGE.jpg" alt="You didn't load the assets, sad" srcset="">
+        </div>
+        <h4>Proton Proton Chain</h4>
+        <img src="../images/PPChain.webp" alt="" class="img-fluid">
+        <p>
+            Nuclear Fusion in the Sun and other stars of similar weigh occurs by the Proton Proton Chain. As you can see, the Sun's main source of fuel is Hydrogen, and its product is He. This is why most of Sun's mass is H or He. 
+        </p>
+        <p>
+            Notice that the surface temperature of the Sun is 5500K, and 15000000K at its core. These temperatures are not sufficiently high for Fusion to occur. Yet, every second, the Sun's core fuses about 600 million tons of hydrogen into helium, and in the process converts 4 million tons of matter into energy.
+        </p>
+    </section>
+    <section>
+        <h3>Quantum Mechanics</h3>
+        <p>Quantum mechanics is a fundamental theory in physics that provides a description of the physical properties of nature at the scale of atoms and subatomic particles.</p>
+        <p>
+            Classical physics, the collection of theories that existed before the advent of quantum mechanics, describes many aspects of nature at an ordinary (macroscopic) scale, but is not sufficient for describing them at small (atomic and subatomic) scales. Most theories in classical physics can be derived from quantum mechanics as an approximation valid at large (macroscopic) scale.
+        </p>
+        <p>
+            Quantum mechanics differs from classical physics in that energy, momentum, angular momentum, and other quantities of a bound system are restricted to discrete values (quantization), objects have characteristics of both particles and waves (wave-particle duality), and there are limits to how accurately the value of a physical quantity can be predicted prior to its measurement, given a complete set of initial conditions (the uncertainty principle). 
+        </p>
+        <p>
+            This results in a few interesting phenonomena:
+            <ul>
+                <li>Wave particle duality</li>
+                <li>Quantum Tunnelling</li>
+                <li>Quantem Entanglement</li>
+            </ul>
+            In this website, we will be focusing on specifically on the properties of Quantum Tunneling and how it relates to fusion in the sun. 
+        </p>
+    </section>
+    <section>
+        <h3>Wave Function</h3>
+        <p>
+            The wave function is a function that mathematically describes a particle. 
+            Particles like protons and electrons have associated wave functions. 
+            A wave function exists in \(\mathbb{R}\) for a one dimensional case (\(\mathbb{R}^3\) for the 3-dimensional case) so given a particle, every point in a given space will take a value of the wavefunction. 
+            For simplicity’s sake we assume the particle exists in 1-dimension and is time invariant, and the function will be written as \(\psi(x)\). 
+            The wave function can vary with time, in which case we write it as \(\psi(x,t)\).
+            This can be seen here (note the real and complex values, idk if too lazy to make 3d complex graph):
+        </p>
+        <img src="../images/wave_function_free_space.png" alt="" class="img-fluid" width="720" height="600">
+        <p>
+            We will cover 2 main properties of the wave function.
+        </p>
+        <p>
+            1. The probability of finding a particle at a position x in space is equal to the square of the modulus of the wave function at x.
+            In other words, 
+            \[Probability\;particle\;is\;at\;position\;x = \|\psi(x)\|^2 \] 
+            Since the wave function can be complex valued, 
+            \[ \|\psi(x)\|^2  = \psi(x) \psi^*(x) \] 
+            where \(\psi^*(x)\) is the complex conjugate of \(\psi(x)\) (Recall the properties of complex numbers). 
+            If we plot \( \|\psi(x)\|^2 \) against x, we get a probability density function of the position of the particle in space. 
+            (diagram) 
+        </p>
+        <p>
+            Now we have our probability density function, we can find the probability the particle exists in a given area in space. 
+            The probability the particle exists between x=a and x=b is 
+            \[ \int\limits_{a}^{b} \psi(x) \psi^*(x) dx\]
+        </p>
+        <p>
+            2. The wave function is normalized. 
+            Suppose we use the above formula to find the probability the particle exists in all of free space. 
+            According to common sense, it has a 100% chance to be found somewhere in the entire universe.
+            Mathematically we write this as:
+            \[\int\limits_{-\infty}^{\infty} \psi(x) \psi^*(x) dx = \int\limits_{-\infty}^{\infty} \|\psi(x)\|^2 dx = 1\]
+            This is a condition all wave functions have to obey and is called Normalization. This is also a reiteration of the definition of a probability density function.
+        </p>
+    </section>
+    <section class>
+        <h3>Quantum Tunneling</h3>
+        <p>
+            Quantum tunnelling, also known as tunneling (US) is a quantum mechanical phenomenon whereby a wavefunction can propagate through a potential barrier.
+ 
+            The transmission through the barrier can be finite and depends exponentially on the barrier height and barrier width. The wavefunction may disappear on one side and reappear on the other side. The wavefunction and its first derivative are continuous. In steady-state, the probability flux in the forward direction is spatially uniform. No particle or wave is lost. Tunneling occurs with barriers of thickness around 1–3 nm and smaller.[1]   
+        </p>
+        <p>
+
+        </p>
+        Though this probability is still low, the extremely large number of nuclei in the core of a star is sufficient to sustain a steady fusion reaction.
+    </section>
+
+    <footer>
+        <div class="container bg-light text-black-50">
+            <p>This is the end of the website</p>
+            <p> <a href = ''>Turn back</a> or face the consequences</p>
+        </div>
+    </footer>
+
+</body>
+</html>
