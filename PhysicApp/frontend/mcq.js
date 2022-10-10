@@ -11,9 +11,10 @@ questionList = [{
     answer: 'c'
 },{
     question: `Which of the following statements explains why there is no fusion reactor currently in the world. 
-    I.	More energy is needed to overcome electrostatic repulsion between nucleus than the energy produced by nuclear fusion.
-    II.	Products of nuclear fusion is toxic to the environment
-    III.	Neutrons produced during fusion poses threat of neutron radiation.
+    <br>
+    I.	More energy is needed to overcome electrostatic repulsion between nucleus than the energy produced by nuclear fusion. <br>
+    II.	Products of nuclear fusion is toxic to the environment <br>
+    III.	Neutrons produced during fusion poses threat of neutron radiation. <br>
     `,
     options: {a:'I only',
     b:'II and III',
@@ -22,14 +23,34 @@ questionList = [{
     answer: 'c'
 },{
     question: `Which of the following shows a correct comparison between nuclear fusion and nuclear fission:
-
-        Nuclear Fusion                                  Nuclear Fission
-    A	Only small nuclei can undergo fusion	        Nuclei of all size can undergo fission
-    B	Requires high density and high temperature      Requires bombardment of neutrons to initiate cascade.
-        to overcome electrostatic repulsion between nuclei	
-    C	Final Mass is more than initial mass	        Final mass is less than initial mass
-    D	Energy is produced	                            Energy is absorbed
-`,
+    <br>
+    <table>
+    <tr>
+      <th></th>
+      <th>Nuclear Fusion</th>
+      <th>Nuclear Fission</th>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>Only small nuclei can undergo fusion</td>
+      <td>Nuclei of all size can undergo fission</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>Requires high density and high temperature to overcome electrostatic repulsion between nuclei</td>
+      <td>Requires bombardment of neutrons to initiate cascade.</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>Final Mass is more than initial mass</td>
+      <td>Final mass is less than initial mass</td>
+    </tr>
+    <tr>
+        <td>D</td>
+        <td>Energy is produced</td>
+        <td>Energy is absorbed</td>
+    </tr>
+  </table>`,
     options: {a:'A',
     b:'B',
     c:'C',
@@ -64,7 +85,7 @@ for (var i = 0; i<questionList.length; i++){
     questionsElement.innerHTML += `
     <div class = '${question.answer} border border-white rounded p-2 my-3'>
         <h5 id = "Qn ${i+1}">Qn ${i+1}</h5>
-        <p>${question.question}</p>
+        <div class = 'py-2'>${question.question}</div>
         <form action="" class = 'container'>
             <input type="radio" id = "Q${i+1}A" name = "Question${i+1}" value = "a"><label for="Q${i+1}A">${question.options.a}</label><br>
             <input type="radio" id = "Q${i+1}B" name = "Question${i+1}" value = "b"><label for="Q${i+1}B">${question.options.b}</label><br>
